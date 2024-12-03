@@ -8,6 +8,13 @@ This script provides a GUI interface to interact with Cisco DNA Center's API and
 - Access to a Cisco DNA Center instance
 - API credentials (username and password)
 
+### macOS Users
+For better experience on macOS, additional package is required:
+```bash
+pip install tkmacosx
+```
+This package improves button appearance and handling on macOS.
+
 ## Installation
 
 1. Clone or download this repository
@@ -61,6 +68,3 @@ The requirements.txt file includes:
 requests: For making HTTP requests to the DNA Center API
 urllib3: Required by requests and used for SSL warning suppression
 I didn't include tkinter in requirements.txt because:
-It comes bundled with Python installations
-It's not installable via pip (it's part of the standard library)
-Users can now simply run pip install -r requirements.txt to install all necessary dependencies.
